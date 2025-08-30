@@ -1,4 +1,22 @@
 [
-  { "title": "E-commerce App", "img": "/portfolio1.jpg" },
-  { "title": "Portfolio Website", "img": "/portfolio2.jpg" }
+  {
+    "title": "Startup Landing Page",
+    "image": "portfolio1.png",
+    "link": "#"
+  },
+  {
+    "title": "E-commerce Website",
+    "image": "portfolio2.webp",
+    "link": "#"
+  },
+  {
+    "title": "Mobile App Design",
+    "image": "portfolio3.jpg",
+    "link": "#"
+  },
+  {
+    "title": "SEO Optimization Project",
+    "image": "portfolio4.webp",
+    "link": "#"
+  }
 ]
