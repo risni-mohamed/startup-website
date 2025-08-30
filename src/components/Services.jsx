@@ -1,20 +1,31 @@
-const services = [
-  { title: "Web Development", desc: "Modern websites using React" },
-  { title: "UI/UX Design", desc: "Clean and user-friendly designs" },
-  { title: "SEO Optimization", desc: "Improve search engine rankings" },
-];
+import servicesData from "../data/services.json";
 
 export default function Services() {
   return (
-    <section id="services" className="p-10 bg-gray-100 text-center">
-      <h3 className="text-2xl font-bold mb-4">Our Services</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {services.map((service, i) => (
-          <div key={i} className="p-6 shadow rounded bg-white">
-            <h4 className="font-semibold text-lg mb-2">{service.title}</h4>
-            <p className="text-gray-600">{service.desc}</p>
+    <section id="services" className="py-20 bg-white px-4">
+      <div className="max-w-7xl mx-auto text-center mb-12">
+        <h2 className="text-4xl font-extrabold text-indigo-900 mb-2">Our Services</h2>
+        <div className="w-20 h-1 bg-yellow-400 mx-auto mb-4 rounded"></div>
+        <p className="text-lg text-indigo-700 max-w-2xl mx-auto">
+          We offer a range of services to help your startup succeed online.
+        </p>
+      </div>
+
+      <div className="max-w-7xl mx-auto grid gap-8 md:grid-cols-3">
+        {servicesData.map((service, index) => (
+          <div
+            key={index}
+            className="bg-indigo-50 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300"
+          >
+            <h3 className="text-2xl font-bold text-indigo-900 mb-2">{service.title}</h3>
+            <p className="text-indigo-700">{service.description}</p>
           </div>
         ))}
+      </div>
+
+      {/*divider of services and portfolio*/}
+      <div className="mt-16 flex justify-center">
+        <div className="w-24 h-1 bg-indigo-900 rounded"></div>
       </div>
     </section>
   );

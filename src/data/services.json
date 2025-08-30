@@ -1,5 +1,22 @@
 [
-  { "title": "Web Development", "desc": "Modern websites using React" },
-  { "title": "UI/UX Design", "desc": "Clean and user-friendly designs" },
-  { "title": "SEO Optimization", "desc": "Improve search engine rankings" }
+  {
+    "title": "Web Development",
+    "description": "Build modern and responsive websites tailored for your startup."
+  },
+  {
+    "title": "UI/UX Design",
+    "description": "Create stunning and user-friendly designs for web and mobile apps."
+  },
+  {
+    "title": "SEO Optimization",
+    "description": "Improve your website’s visibility and ranking on search engines."
+  },
+  {
+    "title": "E-commerce Solutions",
+    "description": "Develop online stores that convert visitors into customers."
+  },
+  {
+    "title": "Maintenance & Support",
+    "description": "Reliable support to keep your website running smoothly."
+  }
 ]
