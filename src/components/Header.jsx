@@ -17,10 +17,10 @@ export default function Header() {
     <header className="fixed w-full z-20 bg-indigo-900/95 shadow-lg backdrop-blur-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4 md:p-6">
         <h1 className="text-2xl font-extrabold text-white tracking-widest">
-          INXCODE Pvt Ltd
+          Startup Website
         </h1>
 
-        {/* Desktop Navigation */}
+        {/*dekstop navigate*/}
         <nav className="hidden md:flex gap-8">
           {navItems.map((item) => (
             <Link
@@ -38,7 +38,7 @@ export default function Header() {
           ))}
         </nav>
 
-        {/* Mobile Menu Toggle */}
+        {/*mobile menu*/}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -49,7 +49,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/*mobile navigate*/}
       {isOpen && (
         <nav className="flex flex-col gap-4 bg-indigo-900/95 p-6 rounded-b-md md:hidden shadow-lg">
           {navItems.map((item) => (
