@@ -10,13 +10,11 @@ export default function Contact() {
   const [errors, setErrors] = useState({});
   const [success, setSuccess] = useState("");
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" }); // clear error on change
   };
 
-  // Simple validation
   const validate = () => {
     const newErrors = {};
     if (!formData.name.trim()) newErrors.name = "Name is required";
@@ -27,7 +25,6 @@ export default function Contact() {
     return newErrors;
   };
 
-  // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -36,7 +33,6 @@ export default function Contact() {
       return;
     }
 
-    // Form is valid, do something (e.g., send to API)
     console.log("Form Data:", formData);
     setSuccess("Message sent successfully!");
     setFormData({ name: "", email: "", message: "" });
